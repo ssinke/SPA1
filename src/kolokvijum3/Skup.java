@@ -56,4 +56,12 @@ public class Skup<T> {
 	      }
 	      return rezultat + " }";
 	}
+	
+	public void stampajSve(){
+		Element tekuci = zaglavlje.veza;
+		while(tekuci!=zaglavlje){
+			System.out.println(tekuci.info);
+			tekuci=tekuci.veza;
+		}
+	}
 }
