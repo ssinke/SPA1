@@ -8,6 +8,5 @@ public class ProbaSkupa {
 			in.ubaci(i);
 		}
 		System.out.println(in);
-		in.stampajSve();
 	}
 }
