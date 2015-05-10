@@ -14,8 +14,21 @@ public class prakticne1 {
 		
 		System.out.println(s);
 	}
+	
+	public static void drugiZadatak(){
+		Skup<Integer> s = new Skup<Integer>();
+		String imeF = "brojevi.txt";
+		while(!Svetovid.in(imeF).isEmpty()){
+			s.ubaci(Svetovid.in(imeF).readInt());
+		}
+		Svetovid.in("brojevi.txt").close();
+		System.out.println(s);
+	}
+	
 	public static void main(String[] args) {
-		prviZadatak();
+		
+		drugiZadatak();
+		
 	}
 
 }
