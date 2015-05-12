@@ -47,13 +47,14 @@ public class F1 {
 	
 	public static void main(String[] args) {
 		Skup<String> sampioni = unosSampiona("sampioni-po-godinama.txt");
+		System.out.println("Ukupno razlicitih sampiona: " + sampioni.velicina());
 		System.out.println(sampioni);
 		ispisUFajl("sampioni.txt" , sampioni);
 		System.out.println();
 		
 		Skup<String> pobednici = unosPobednika("pobednici.txt");
 		Skup<String> bezSampionata = pobednici.razlika(sampioni);
-		System.out.println("Vozaci koji imaju bar jednu pobedu, a nikada nisu bili sampioni:");
+		System.out.println("Ukupno vozaca koji imaju pobedu, a nikada nisu osvojili sampionat: " + bezSampionata.velicina());
 		System.out.println(bezSampionata);
 		ispisUFajl("pobednici-bez-sampionata.txt" , bezSampionata);
 		
