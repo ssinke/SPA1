@@ -1,5 +1,4 @@
 package kolokvijum3;
-
 import org.svetovid.Svetovid;
 
 public class F1 {
